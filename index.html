@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreejit Paudel | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <nav id="nav">
+    <div class="logo">SP<em>.</em></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hbg">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mob-menu">
+    <a href="#home"     onclick="closeMob()">Home</a>
+    <a href="#about"    onclick="closeMob()">About</a>
+    <a href="#skills"   onclick="closeMob()">Skills</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#contact"  onclick="closeMob()">Contact</a>
+  </div>
+
+  <section id="home">
+    <div class="hero-left">
+
+      <div class="hero-badge reveal">
+        <span class="dot"></span>
+        Available for collaboration
+      </div>
+
+      <h1 class="hero-name reveal d1">
+        <span class="first">Shreejit</span><br />
+        <span class="last">Paudel</span>
+      </h1>
+
+      <div class="hero-role reveal d2">
+        &gt;&nbsp;<span id="typed"></span><span class="cursor-blink"></span>
+      </div>
+
+      <p class="hero-desc reveal d3">
+        I'm a <strong>passionate frontend developer</strong> and student from
+        <strong>🇳🇵 Nepal</strong>. I love building modern websites,
+        <strong>login &amp; signup UI systems</strong>, gaming interfaces, and
+        creative digital projects using HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="hero-btns reveal d4">
+        <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-stats reveal d5">
+        <div class="stat"><h4>7+</h4><p>Projects Built</p></div>
+        <div class="stat"><h4>3+</h4><p>Languages Used</p></div>
+        <div class="stat"><h4>2026</h4><p>Active Year</p></div>
+      </div>
+
+    </div>
+
+    <div class="hero-right reveal d2">
+      <div class="avatar-wrap">
+        <div class="ring-outer"></div>
+        <div class="ring-inner"></div>
+        <div class="avatar-circle">SP</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-pad">
+
+      <span class="section-label reveal">// about me</span>
+      <h2 class="section-title reveal d1">Who Is <span>Shreejit?</span></h2>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p class="reveal d1">
+            My name is <strong>Shreejit Paudel</strong> — a
+            <span class="hl">frontend developer</span> and secondary school student
+            from <strong>Nepal</strong>. I'm driven by a genuine love of building
+            things for the web, one pixel at a time.
+          </p>
+          <p class="reveal d2">
+            My journey started with simple HTML pages and quickly evolved into
+            building <strong>multi-page authentication systems</strong>, animated login
+            UIs, immersive gaming interfaces, and fully responsive pages.
+            Every project sharpens my skills and pushes my creativity further.
+          </p>
+          <p class="reveal d3">
+            Beyond code, I have a strong interest in <span class="hl">graphic design</span> —
+            creating presentations, logos, and visual identities that blend technical
+            execution with real artistic intent.
+          </p>
+          <div class="small-divider reveal d4"></div>
+          <div class="meta-row reveal d4">
+            <span class="meta-chip">📍 Nepal</span>
+            <span class="meta-chip">🎓 Secondary School</span>
+            <span class="meta-chip">🎨 UI Enthusiast</span>
+            <span class="meta-chip">💡 Open to Collab</span>
+          </div>
+        </div>
+
+        <div class="info-cards">
+
+          <div class="info-card reveal d2">
+            <div class="ic-icon">🎯</div>
+            <div class="ic-text">
+              <h4>Current Focus</h4>
+              <p>Mastering JavaScript, building real-world projects, and growing as a developer.</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal d3">
+            <div class="ic-icon">🏫</div>
+            <div class="ic-text">
+              <h4>Education</h4>
+              <p>Learning HTML, CSS, JS, C++, and DBMS in secondary school.</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal d4">
+            <div class="ic-icon">🎮</div>
+            <div class="ic-text">
+              <h4>Gaming UI Enthusiast</h4>
+              <p>Loves dark-themed, dramatic game login and registration UIs.</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal d5">
+            <div class="ic-icon">🎨</div>
+            <div class="ic-text">
+              <h4>Creative Side</h4>
+              <p>Logo design, slide decks, and graphic design for various projects.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-pad">
+
+      <span class="section-label reveal">// what I use</span>
+      <h2 class="section-title reveal d1">My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal d1" data-pct="90">
+          <span class="skill-icon">🌐</span>
+          <h3>HTML</h3>
+          <p>Semantic markup and modern web structure.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d2" data-pct="85">
+          <span class="skill-icon">🎨</span>
+          <h3>CSS</h3>
+          <p>Responsive layouts, Flexbox, Grid &amp; animations.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d3" data-pct="75">
+          <span class="skill-icon">⚡</span>
+          <h3>JavaScript</h3>
+          <p>DOM, events, animations, and interactivity.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d4" data-pct="62">
+          <span class="skill-icon">🔢</span>
+          <h3>C++</h3>
+          <p>Logic, algorithms, and data structures.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d5" data-pct="58">
+          <span class="skill-icon">🗄️</span>
+          <h3>DBMS</h3>
+          <p>Database concepts and basic SQL queries.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d6" data-pct="80">
+          <span class="skill-icon">✏️</span>
+          <h3>Graphic Design</h3>
+          <p>Logos, presentations, and visual branding.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d1" data-pct="88">
+          <span class="skill-icon">📱</span>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts for all screen sizes.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+        <div class="skill-card reveal d2" data-pct="72">
+          <span class="skill-icon">🖌️</span>
+          <h3>UI/UX Design</h3>
+          <p>User-centered, clean interface design.</p>
+          <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-pad">
+
+      <span class="section-label reveal">// what I've built</span>
+      <h2 class="section-title reveal d1">Featured <span>Projects</span></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal d1">
+          <div class="proj-num">PROJECT_01</div>
+          <h3>Animated Login Page</h3>
+          <p>Animated modern login page with stylish UI and smooth CSS transitions. A clean, fully responsive authentication interface built from scratch.</p>
+          <div class="tag-wrap">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://shreejit-paudel.github.io/Animated-login-page/" target="_blank" rel="noopener" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal d2">
+          <div class="proj-num">PROJECT_02</div>
+          <h3>Responsive Registration Form</h3>
+          <p>Modern responsive registration form with a clean layout and validation-ready design. Built with precision and clear visual hierarchy.</p>
+          <div class="tag-wrap">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://shreejit-paudel.github.io/-Responsive-Registration-Form/" target="_blank" rel="noopener" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal d3">
+          <div class="proj-num">PROJECT_03</div>
+          <h3>Sign Up Page</h3>
+          <p>Creative sign-up interface with modern frontend styling, refined spacing, and interactive input fields. A sleek UX-focused form design.</p>
+          <div class="tag-wrap">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://shreejit-paudel.github.io/Sign-up-page/" target="_blank" rel="noopener" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal d4">
+          <div class="proj-num">PROJECT_04</div>
+          <h3>Responsive Registration Form v2</h3>
+          <p>Fully responsive frontend registration page optimized for all devices. Clean architecture with consistent design language throughout.</p>
+          <div class="tag-wrap">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://shreejit-paudel.github.io/Responsive-registration-from-/" target="_blank" rel="noopener" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal d5">
+          <div class="proj-num">PROJECT_05</div>
+          <h3>Gaming Login UI Concept</h3>
+          <p>A dark, dramatic gaming-style login and registration interface with neon glowing effects, custom visuals, and an immersive atmospheric design.</p>
+          <div class="tag-wrap">
+            <span class="tag">Gaming UI</span>
+            <span class="tag">Dark Theme</span>
+            <span class="tag">CSS Art</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-wip">In Progress</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal d6">
+          <div class="proj-num">PROJECT_06</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>This very portfolio — built from scratch with pure HTML, CSS, and JS. Particle canvas, typing animation, scroll reveals, and 3D card tilt effects.</p>
+          <div class="tag-wrap">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-here">You're here →</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal d1">
+          <div class="proj-num">PROJECT_07</div>
+          <h3>Presentation &amp; Logo Design</h3>
+          <p>A collection of professional presentation decks and logo concepts for educational and creative projects — design thinking meets clean visual execution.</p>
+          <div class="tag-wrap">
+            <span class="tag">Branding</span>
+            <span class="tag">Logo Design</span>
+            <span class="tag">Slides</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-wip">Design Work</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-pad">
+      <div class="contact-wrap">
+
+        <span class="section-label reveal">// get in touch</span>
+        <h2 class="section-title reveal d1">Let's <span>Connect</span></h2>
+
+        <p class="contact-sub reveal d2">
+          I'm open to collaborations, new projects, and creative conversations
+          about frontend and design. Don't hesitate to reach out!
+        </p>
+
+        <div class="contact-card reveal d3">
+          <h3>Say Hello 👋</h3>
+          <p>Open to frontend projects, collabs, and design work from Nepal and beyond.</p>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-send" id="send-btn">
+              <span id="send-txt">Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-ok" id="form-ok">Message sent! I'll get back to you soon.</div>
+          </form>
+
+          <div class="divider-line"><span>or reach me directly</span></div>
+
+          <div class="contact-links">
+            <a href="mailto:shreejitpaudel@email.com" class="c-chip">📧 Email</a>
+            <a href="https://github.com/shreejit-paudel" target="_blank" rel="noopener" class="c-chip">🐙 GitHub</a>
+            <a href="#" class="c-chip">💼 LinkedIn</a>
+            <a href="#" class="c-chip">💬 Discord</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo" style="font-size:20px;">SP<em>.</em></div>
+    <p>Designed &amp; Built by <span>Shreejit Paudel</span> · Nepal 🇳🇵</p>
+    <p>© 2026 · All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
